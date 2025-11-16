@@ -1,10 +1,15 @@
-let currentResult = 4;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-currentResult = currentResult + 9 * 3;
+function add (num1, num2 ) {
+    const result = num1 + num2;
+    return result;
+}
 
-outputResult(currentResult);
 
-let a = 3;
-let b = 5;
+currentResult = add (5, 4);
 
-let sum = a + b;
+let calculationDescripiton = `(${defaultResult} + 10 * 10) + 14 + 25`;
+
+
+outputResult(currentResult, calculationDescripiton);
